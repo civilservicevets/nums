@@ -1,0 +1,21 @@
+<program> ::= <statement> | <statement> <program>
+
+<statement> ::= <number> | <variable> | <assignment> | <operation>
+
+<number> ::= <integer> | <float>
+
+<integer> ::= ["-"] <digit>+
+
+<float> ::= ["-"] <digit>+ "." <digit>+
+
+<digit> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+
+<assignment> ::= <variable> "=" <expression>
+
+<expression> ::= <term> | <expression> "+" <term> | <expression> "-" <term>
+
+<term> ::= <factor> | <term> "*" <factor> | <term> "/" <factor>
+
+<factor> ::= <number> | <variable> | "(" <expression> ")"
+
+<operation> ::= "compress" | "decompress" | "hash" | "encrypt" | "decrypt" | "sort" | "search" | "read" | "write" | "input" | "output" | "connect" | "disconnect" | "analyze" | "optimize" | "train" | "test" | "evaluate" | "predict" | "classify" | "cluster" | "regress" | "generate" | "synthesize" | "tokenize" | "stem" | "lemmatize" | "stopwords" | "ngram" | "tf-idf" | "word2vec" | "glove" | "fasttext" | "sentence-embedding" | "sentiment-analysis" | "named-entity-recognition" | "part-of-speech-tagging" | "dependency-parsing" | "language-translation" | "question-answering"
